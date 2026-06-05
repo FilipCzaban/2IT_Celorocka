@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://filipczaban.github.io/2IT_Celorocka/sitemap.xml

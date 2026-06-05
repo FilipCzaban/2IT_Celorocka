@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="cs" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- SEO -->
+  <title>PyroData CZ – Pyrotechnická databáze | Chemikálie, Kompozice, Definice</title>
+  <meta name="description" content="Komplexní pyrotechnická databáze pro nadšence. Chemikálie, kompozice, definice a bezpečnostní informace. Přes 50+ formulácí.">
+  <meta name="keywords" content="pyrotechnika, pyrotechnická databáze, chemikálie, kompozice, oxidátory, hvězdy, glitter, rakety, dýmovnice">
+  <meta name="author" content="Filip Czaban">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://filipczaban.github.io/2IT_Celorocka/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://filipczaban.github.io/2IT_Celorocka/">
+  <meta property="og:title" content="PyroData CZ – Pyrotechnická databáze">
+  <meta property="og:description" content="Komplexní pyrotechnická databáze pro nadšence. Chemikálie, kompozice, definice a bezpečnostní informace.">
+  <meta property="og:image" content="https://filipczaban.github.io/2IT_Celorocka/og-image.jpg">
+  <meta property="og:locale" content="cs_CZ">
+  <meta property="og:site_name" content="PyroData CZ">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://filipczaban.github.io/2IT_Celorocka/">
+  <meta name="twitter:title" content="PyroData CZ – Pyrotechnická databáze">
+  <meta name="twitter:description" content="Komplexní pyrotechnická databáze pro nadšence. Chemikálie, kompozice, definice.">
+  <meta name="twitter:image" content="https://filipczaban.github.io/2IT_Celorocka/og-image.jpg">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "PyroData CZ",
+    "url": "https://filipczaban.github.io/2IT_Celorocka/",
+    "description": "Komplexní pyrotechnická databáze pro nadšence – chemikálie, kompozice, definice.",
+    "inLanguage": "cs",
+    "author": { "@type": "Person", "name": "Filip Czaban" },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": { "@type": "EntryPoint", "urlTemplate": "https://filipczaban.github.io/2IT_Celorocka/?q={search_term_string}" },
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x1F525;</text></svg>">
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Přejít na hlavní obsah</a>
+
+  <header class="header" role="banner">
+    <nav class="nav" role="navigation" aria-label="Hlavní navigace">
+      <div class="nav__inner">
+        <a href="#" class="nav__logo" aria-label="PyroData CZ – domů">
+          <span class="nav__logo-icon" aria-hidden="true">&#x1F525;</span>
+          <span class="nav__logo-text">Pyro<span class="nav__logo-accent">Data</span> CZ</span>
+        </a>
+        <ul class="nav__links" id="navLinks" role="list">
+          <li><a href="#chemicals" class="nav__link">Chemikálie</a></li>
+          <li><a href="#compositions" class="nav__link">Kompozice</a></li>
+          <li><a href="#definitions" class="nav__link">Definice</a></li>
+        </ul>
+        <div class="nav__actions">
+          <button class="theme-btn" id="themeBtn" aria-label="Přepnout na světlý režim" title="Přepnout téma">
+            <span class="theme-btn__icon" aria-hidden="true">&#9728;&#65039;</span>
+          </button>
+          <button class="hamburger" id="hamburger" aria-label="Otevřít menu" aria-expanded="false" aria-controls="navLinks">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content" role="main">
+
+    <section class="hero" id="hero" aria-label="Úvodní sekce">
+      <div class="hero__particles" id="heroParticles" aria-hidden="true"></div>
+      <div class="hero__overlay" aria-hidden="true"></div>
+      <div class="hero__content">
+        <div class="hero__badge" aria-hidden="true">&#x26A1; Otevřená databáze &middot; Školní projekt 2IT</div>
+        <h1 class="hero__title">
+          Pyrotechnická
+          <span class="hero__title--fire">Databáze</span>
+        </h1>
+        <p class="hero__subtitle">
+          Kompletní reference chemikálií, kompozic a definic pro pyrotechnické nadšence.
+          Přes 50+ formulácí s ingrediencemi, vlastnostmi a bezpečnostními poznámkami.
+        </p>
+        <div class="hero__search" role="search" aria-label="Globální vyhledávání">
+          <label for="globalSearch" class="sr-only">Vyhledat v databázi</label>
+          <div class="search-box">
+            <span class="search-box__icon" aria-hidden="true">&#x1F50D;</span>
+            <input type="search" id="globalSearch" class="search-box__input"
+              placeholder="Hledat chemikálii, kompozici nebo definici…"
+              autocomplete="off" spellcheck="false" aria-label="Vyhledávání v databázi">
+            <kbd class="search-box__kbd" aria-hidden="true">Ctrl+K</kbd>
+          </div>
+          <div class="search-dropdown" id="searchDropdown" role="listbox" aria-label="Výsledky vyhledávání" hidden></div>
+        </div>
+        <div class="hero__stats" aria-label="Statistiky databáze">
+          <div class="hero__stat"><span class="hero__stat-num" id="statChem">0</span><span class="hero__stat-lbl">Chemikálií</span></div>
+          <div class="hero__stat-divider" aria-hidden="true"></div>
+          <div class="hero__stat"><span class="hero__stat-num" id="statComp">0</span><span class="hero__stat-lbl">Kompozic</span></div>
+          <div class="hero__stat-divider" aria-hidden="true"></div>
+          <div class="hero__stat"><span class="hero__stat-num" id="statDef">0</span><span class="hero__stat-lbl">Definic</span></div>
+        </div>
+      </div>
+      <a href="#chemicals" class="hero__scroll" aria-label="Přejít na obsah">
+        <span class="hero__scroll-text">Pokračovat</span>
+        <span class="hero__scroll-arrow" aria-hidden="true"></span>
+      </a>
+    </section>
+
+    <section class="section" id="chemicals" aria-labelledby="chem-heading">
+      <div class="container">
+        <header class="section__head">
+          <h2 class="section__title" id="chem-heading"><span aria-hidden="true">&#x2697;&#xFE0F;</span> Chemikálie</h2>
+          <p class="section__sub">Základní suroviny používané v pyrotechnice</p>
+        </header>
+        <div class="tabs" role="tablist" aria-label="Kategorie chemikálií">
+          <button class="tab tab--active" role="tab" aria-selected="true" aria-controls="chem-panel" id="tab-binders" data-tab="binders">Pojiva</button>
+          <button class="tab" role="tab" aria-selected="false" aria-controls="chem-panel" id="tab-fuels" data-tab="fuels">Paliva</button>
+          <button class="tab" role="tab" aria-selected="false" aria-controls="chem-panel" id="tab-metals" data-tab="metals">Kovy</button>
+          <button class="tab" role="tab" aria-selected="false" aria-controls="chem-panel" id="tab-oxidizers" data-tab="oxidizers">Oxidátory</button>
+        </div>
+        <div id="chem-panel" class="chem-grid" role="tabpanel" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="compositions" aria-labelledby="comp-heading">
+      <div class="container">
+        <header class="section__head">
+          <h2 class="section__title" id="comp-heading"><span aria-hidden="true">&#x2728;</span> Kompozice</h2>
+          <p class="section__sub">Pyrotechnické formuláce s ingrediencemi a bezpečnostními informacemi</p>
+        </header>
+        <div class="filterbar" role="toolbar" aria-label="Filtry kompozic">
+          <div role="search">
+            <label for="compSearch" class="sr-only">Hledat kompozici</label>
+            <input type="search" id="compSearch" class="filterbar__input" placeholder="&#x1F50D; Hledat kompozici nebo složku…" aria-label="Hledat v kompozicích">
+          </div>
+          <div class="filterbar__chips" id="compChips" role="group" aria-label="Filtry kategorií"></div>
+        </div>
+        <div id="comp-grid" class="comp-grid" role="region" aria-live="polite" aria-label="Kompozice"></div>
+      </div>
+    </section>
+
+    <section class="section" id="definitions" aria-labelledby="def-heading">
+      <div class="container">
+        <header class="section__head">
+          <h2 class="section__title" id="def-heading"><span aria-hidden="true">&#x1F4D6;</span> Definice A–Z</h2>
+          <p class="section__sub">Pyrotechnický slovník a odborné pojmy</p>
+        </header>
+        <nav class="az-nav" aria-label="Abecední navigace">
+          <div class="az-nav__row" id="azRow"></div>
+        </nav>
+        <div role="search" class="def-search">
+          <label for="defSearch" class="sr-only">Hledat definici</label>
+          <input type="search" id="defSearch" class="filterbar__input" placeholder="&#x1F50D; Hledat pojem…" aria-label="Hledat v definicích">
+        </div>
+        <div id="def-list" class="def-list" role="region" aria-live="polite" aria-label="Definice"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <span class="footer__logo" aria-hidden="true">&#x1F525;</span>
+          <strong class="footer__name">PyroData CZ</strong>
+          <p class="footer__desc">Vzdělávací pyrotechnická databáze pro nadšence. Veškeré informace jsou určeny výlučně pro studijní účely.</p>
+        </div>
+        <div>
+          <h3 class="footer__col-title">Databáze</h3>
+          <ul class="footer__links" role="list">
+            <li><a href="#chemicals">Chemikálie</a></li>
+            <li><a href="#compositions">Kompozice</a></li>
+            <li><a href="#definitions">Definice A–Z</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__col-title">Projekt</h3>
+          <ul class="footer__links" role="list">
+            <li><a href="https://github.com/FilipCzaban/2IT_Celorocka" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="sitemap.xml" target="_blank">Sitemap</a></li>
+            <li><a href="robots.txt" target="_blank">Robots.txt</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&#x26A0;&#xFE0F; <strong>Upozornění:</strong> Informace jsou pouze pro vzdělávací účely. Pyrotechnika může být nebezpečná. Vždy dodržujte platné zákony.</p>
+        <p class="footer__copy">&copy; 2026 PyroData CZ &middot; Filip Czaban &middot; Školní projekt 2IT</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="btt" id="btt" aria-label="Zpět nahoru" hidden>&#8593;</button>
+
+  <div class="modal-wrap" id="modalWrap" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal" role="document">
+      <button class="modal__close" id="modalClose" aria-label="Zavřít">&times;</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
