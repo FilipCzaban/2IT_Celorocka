@@ -59,6 +59,7 @@ function applyTheme() {
   }
 }
 
+// Funkce pro přepínání témat
 function toggleTheme() {
   state.theme = state.theme === 'dark' ? 'light' : 'dark';
   localStorage.setItem('pyro-theme', state.theme);
@@ -280,6 +281,23 @@ function openModal(id) {
 
   const hazLbl = { low:'✓ Nízké riziko', med:'⚠ Střední riziko', high:'⚠️ Vysoké riziko' };
 
+  // Globální přepínač pro zobrazení/skrytí videí (pokud napíšete, stačí přepsat na false)
+  const SHOW_VIDEOS = true;
+  let videoHtml = '';
+  if (SHOW_VIDEOS && c.youtubeId) {
+    videoHtml = `
+      <div class="modal__video-container">
+        <iframe 
+          src="https://www.youtube.com/embed/${esc(c.youtubeId)}" 
+          title="Video ukázka" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+      </div>
+    `;
+  }
+
   body.innerHTML = `
     <div class="modal__cat">${esc(c.catL)}</div>
     <h2 class="modal__title" id="modalTitle">${esc(c.name)}</h2>
@@ -290,6 +308,7 @@ function openModal(id) {
         ${c.ing.map(i => `<tr><td>${esc(i.n)}</td><td>${i.p}%</td></tr>`).join('')}
       </tbody>
     </table>
+    ${videoHtml}
     <div class="modal__notes">
       <div class="modal__notes-title">⚠️ Poznámky a bezpečnost</div>
       <p>${esc(c.notes)}</p>
@@ -320,6 +339,7 @@ function initModal() {
 // ══════════════════════════════════════════════════════════════
 // DEFINITIONS
 // ══════════════════════════════════════════════════════════════
+// Rejstřík definic
 function renderAZNav() {
   const row = $('#azRow');
   if (!row) return;
@@ -346,7 +366,6 @@ function renderAZNav() {
   });
 }
 
-// (Definitions search/filtering functions...)
 function filterDefs(letter) {
   state.azLetter = letter;
   $$('.az-btn').forEach(b => {
