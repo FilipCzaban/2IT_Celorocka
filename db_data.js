@@ -24,7 +24,7 @@ const DB_CHEMICALS = {
       { name:'Hliník — Airfloat', formula:'Al (< 10 µm)', desc:'Extrémně jemný hliník s obrovským specifickým povrchem. Velmi reaktivní — pro flash prach a zápalné materiály. Manipulace vyžaduje velkou opatrnost.', props:['Extrémně reaktivní','Flash aplikace','Citlivý na ESD'], hazard:'high', uses:['Flash prach','Zápalné slože','Bílé hvězdy'] },
       { name:'Hliník — 200 mesh', formula:'Al (74 µm)', desc:'Standardní pyrotechnický hliník pro barevné hvězdy a kompozice. Vyvážený poměr reaktivity a bezpečnosti. Nejpoužívanější hrubost v praxi.', props:['Standardní hrubost','Víceúčelový','Stříbřité světlo'], hazard:'medium', uses:['Barevné hvězdy','Kompozice','Bílé světlo'] },
       { name:'Hliník — 30 mesh', formula:'Al (600 µm)', desc:'Hrubý hliník pro jiskrové efekty v fontánách. Produkuje velké, dlouhotrvající jiskry. Ideální pro Roman Candles a fontány se stříbřitými jiskrami.', props:['Velké jiskry','Pomalé hoření','Fontánový efekt'], hazard:'medium', uses:['Fontány','Jiskrové efekty','Roman Candles'] },
-      { name:'Hořčík (Mg)', formula:'Mg', desc:'Kov hořící extrémně intenzivním bílým světlem (teplota plamene ~2850 °C). Základ zábleskových světel a signalizačních světlic.', props:['Oslnivě bílé světlo','Velmi vysoká T','Vodíku při styku s vodou'], hazard:'high', uses:['Zábleskové světlo','Magnalium složka','Flares'] },
+      { name:'Hořčík (Mg)', formula:'Mg', desc:'Kov hořící extrémní intenzitou plamene ~2850 °C. Základ záleskových světel a signalizačních světlic.', props:['Oslnivě bílé světlo','Velmi vysoká T','Vodíku při styku s vodou'], hazard:'high', uses:['Zábleskové světlo','Magnalium složka','Flares'] },
       { name:'Titan — hrubý', formula:'Ti (hrubý)', desc:'Kov produkující jasně bílé praskající jiskry charakteristického vizuálního efektu. Odolný a stabilní — vhodný pro profesionální fontány.', props:['Krásné jiskry','Praskání','Stabilní kov'], hazard:'high', uses:['Titanové fontány','Crackle','Salutní slože'] },
       { name:'Železo — hoblovačky', formula:'Fe', desc:'Hrubé železné třísky produkující charakteristické zlaté až oranžové jiskry při oxidaci. Klasický a levný materiál pro zlaté fontány a jiskrnice.', props:['Zlaté jiskry','Cenově dostupné','Charakteristické'], hazard:'low', uses:['Zlaté fontány','Jiskrnice','Zlaté hvězdy'] },
     ],
@@ -36,7 +36,6 @@ const DB_CHEMICALS = {
       { name:'Chloristan amonný (AP)', formula:'NH₄ClO₄', desc:'Výkonný oxidátor pro kompozitní raketová paliva. Nízká molární hmotnost poskytuje vysoký obsah kyslíku. Citlivý na vlhkost — přísné skladování.', props:['Raketový oxidátor','Vysoký výkon','Citlivý na vlhkost'], hazard:'high', uses:['Raketová paliva','Výkonné kompozice'] },
       { name:'Oxid měďnatý (CuO)', formula:'CuO', desc:'Černý prášek — oxidátor dodávající ionty mědi pro modrou nebo modrozelenou barvu plamene. Kombinuje funkci oxidátoru i barviva.', props:['Modrá barva','Oxidátor i barvivo','Tmavý prášek'], hazard:'medium', uses:['Modré hvězdy','Modré flares','Modré dýmy'] },
     ],
-  }
 };
 
 const DB_DEFINITIONS = {
@@ -72,7 +71,7 @@ const DB_DEFINITIONS = {
     ],
     G: [
       { term:'Glitter', def:'Pyrotechnická slože produkující charakteristické blikající světlo se zpožděním. Dosahováno interakcí Sb₂S₃ s dusičnany za vzniku krátkých zpožděných zábleskových reakcí.' },
-      { term:'Granulace', def:'Proces přeměny prašné pyrotechnické směsi na granule pomocí vody a pojiva. Granulovaný materiál je méně citlivý, hoří rovnoměrněji a lze ho snadněji dávkovat.' },
+      { term:'Granulace', def:'Proces přeměny prašné pyrotechnické směsi na granule pomocí vody a pojiva. Granulovaný materiál je méně citliví, hoří rovnoměrněji a lze ho snadněji dávkovat.' },
     ],
     H: [
       { term:'Hvězda (Star)', def:'Komprimovaná peleta pyrotechnické slože spalující se za letu a produkující barevné nebo dekorativní světlo. Základní vizuální prvek každého shellu a ohňostroje.' },
@@ -94,7 +93,7 @@ const DB_DEFINITIONS = {
       { term:'Laminac', def:'Dvousložková polyesterová pryskyřice. Silné chemicky tvrzené pojivo pro speciální aplikace vyžadující mechanickou odolnost.' },
     ],
     M: [
-      { term:'Magnalium (MgAl)', def:'Slitina hořčíku a hliníku v různých poměrech (50:50, 30:70). Reaktivnější než oba kovy samostatně — produkuje intenzivní bílé jiskry s praskáním v oxidačním prostředí.' },
+      { term:'Magnalium (MgAl)', def:'Slitina hořčíku a hliníku v různých poměrech (50:50, 30:70). Reaktivnější než oba kovy samotné — produkuje intenzivní bílé jiskry s praskáním v oxidačním prostředí.' },
       { term:'Měrný povrch (BET)', def:'Celková plocha povrchu prášku na jednotku hmotnosti [m²/g]. Jemnější prášek → větší měrný povrch → rychlejší hoření → větší reaktivita a citlivost.' },
     ],
     N: [
@@ -133,5 +132,4 @@ const DB_DEFINITIONS = {
       { term:'Zápalná teplota', def:'Minimální teplota, při které se látka samovolně vznítí bez přímého přívodu tepla nebo jiskry. Zásadní bezpečnostní parametr pro skladování a transport.' },
       { term:'Zinek (Zn)', def:'Kov produkující modrozelené světlo při hoření. Využíván v dýmových složích a jako složka speciálních barevných efektů.' },
     ],
-  }
 };
