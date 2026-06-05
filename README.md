@@ -18,7 +18,7 @@ Projekt důsledně dodržuje zásadu **nepoužívat žádné externí knihovny a
 * **HTML5:** Sémantický kód pro strukturu stránky a přístupnost.
 * **CSS3 (Vanilla CSS):** Pokročilý design systém s CSS proměnnými, Flexbox a Grid rozložením, klíčovými animacemi a podporou temného/světlého režimu.
 * **JavaScript (Vanilla JS - ES6+):** Rychlá klientská logika, vyhledávací index a dynamické filtrování v reálném čase bez nutnosti načítat data ze serveru.
-* **Vývojové prostředí (IDE):** Visual Studio Code (verze 1.90.2 nebo novější).
+* **Vývojové prostředí (IDE):** Antigravity.
 
 ---
 
