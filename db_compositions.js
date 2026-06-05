@@ -58,7 +58,7 @@ const DB_COMPOSITIONS = [
     { id:12, name:'Flash Prach — Záblesk/Zvuk',   cat:'burst',     catL:'Výbušné náplně',  hazard:'high',
       desc:'Deflagrující slože pro intenzivní záblesk a hlasitý zvuk. NIKDY nemíchat >30 g a nikdy nemíchat jiné složky!',
       ing:[ {n:'Chloristan draselný',p:70}, {n:'Hliník airfloat',p:30} ],
-      notes:'⚠️⚠️ EXTRÉMNĚ NEBEZPEČNÉ. Max. 30 g. Jen 2 složky. Citlivý na tření, náraz, teplo a ESD.' },
+      notes:'⚠️⚠️ EXTRÉMNÊ NEBEZPEČNÉ. Max. 30 g. Jen 2 složky. Citlivý na tření, náraz, teplo a ESD.' },
 
     // WHISTLE
     { id:13, name:'Whistle Mix — Benzoát',         cat:'whistle',   catL:'Whistle Mix',     hazard:'high',
@@ -126,8 +126,7 @@ const DB_COMPOSITIONS = [
     { id:26, name:'Stříbrná jiskrnice — MgAl',     cat:'sparklers', catL:'Jiskrnice',       hazard:'med',
       desc:'Jiskrnice s magnaliem dávajícím studené stříbřité jiskry. Bezpečnější pro použití díky nižší teplotě jisker.',
       ing:[ {n:'Dusičnan barnatý',p:65}, {n:'Magnalium 100mesh',p:20}, {n:'Dextrin',p:10}, {n:'Voda',p:5} ],
-      notes:'Sušte VELMI důkladně — magnalium reaguje s vlhkostí. Min. 48 h sušení.' },
-  ]
+      notes:'Sušte VELMI důkladně — magnalium reaguje s vlhkostí. Min. 48 h sušení.' }
 ];
 
 const DB = {
