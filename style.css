@@ -133,6 +133,8 @@ a:hover { color: var(--fire-2); }
   transition: background var(--t-s);
 }
 
+.nav { height: 100%; }
+
 .nav__inner {
   max-width: var(--max-w);
   margin: 0 auto;
