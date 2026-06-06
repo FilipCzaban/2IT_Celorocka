@@ -104,9 +104,9 @@ const DB_COMPOSITIONS = [
       notes:'⚠️ Barium je toxické — respirátor FFP3 při přípravě. Vysoká teplota hoření.' },
 
   // SMOKE (Color Smoke Grenades - zI_tqrbmZoo)
-    { id:22, name:'Červená dýmovnice',             cat:'smoke',     catL:'Dýmovnice',       hazard:'low', youtubeId:'nmbZjQ_mZ7c',
+    { id:22, name:'Červená dýmovnice',             cat:'smoke',     catL:'Dýmovnice',       hazard:'low', youtubeId:'GfamtC4o4r4',
       desc:'Dýmovnice s červeným organickým barvivem. Laktóza jako palivo hoří pomalu a vytváří husté barevné dýmy.',
-      ing:[ {n:'Dusičnan draselný',p:30}, {n:'Laktóza',p:45}, {n:'Červeté barvivo',p:15}, {n:'NaHCO₃',p:7}, {n:'Dextrin',p:3} ],
+      ing:[ {n:'Dusičnan draselný',p:30}, {n:'Laktóza',p:45}, {n:'Červené barvivo',p:15}, {n:'NaHCO₃',p:7}, {n:'Dextrin',p:3} ],
       notes:'Citlivá na vlhkost — skladujte v hermeticky uzavřených nádobách. Sušte důkladně.' },
     { id:23, name:'Modrá dýmovnice',               cat:'smoke',     catL:'Dýmovnice',       hazard:'low', youtubeId:'ctMnATsuU3o',
       desc:'Modrá dýmovnice s indigo barvivem. Vizuálně nejatraktivnější barva dýmu — modrá je v atmosféře výrazně viditelná.',
