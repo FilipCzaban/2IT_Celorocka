@@ -51,7 +51,7 @@ const DB_COMPOSITIONS = [
 
   // BURST (Display Shell Burst / Salute Explosion)
     { id:11, name:'Burst charge — Granulovaný BP', cat:'burst',     catL:'Výbušné náplně',  hazard:'med', youtubeId:'_jATYcW05Jc',
-      desc:'Granulovaný černý prach pro výbuch shellu. Granule zajiždí rovnoměrný a silný výbuch — prašný BP by deflagroval, ne detonoval.',
+      desc:'Granulovaný černý prach pro výbuch shellu. Granule zajišťují rovnoměrný a silný výbuch — prašný BP by deflagroval, ne detonoval.',
       ing:[ {n:'Dusičnan draselný',p:75}, {n:'Uhlí 80mesh',p:15}, {n:'Síra',p:10} ],
       notes:'MUSÍ být granulovaný pro správný výbuch. Hrubost granulí ovlivňuje razanci výbuchu.' },
     { id:12, name:'Flash Prach — Záblesk/Zvuk',   cat:'burst',     catL:'Výbušné náplně',  hazard:'high', youtubeId:'cyuTE5TLJwk',
@@ -60,7 +60,7 @@ const DB_COMPOSITIONS = [
       notes:'⚠️⚠️ EXTRÉMNÊ NEBEZPEČNÉ. Max. 30 g. Jen 2 složky. Citlivý na tření, náraz, teplo a ESD.' },
 
   // WHISTLE (Whistling Firework Test - APRqm9xl7pY)
-    { id:13, name:'Whistle Mix — Benzoát',         cat:'whistle',   catL:'Whistle Mix',     hazard:'high', youtubeId:'6R8c8T3V-gM',
+    { id:13, name:'Whistle Mix — Benzoát',         cat:'whistle',   catL:'Whistle Mix',     hazard:'high', youtubeId:'hGlWa34RYL4',
       desc:'Píšťalka produkuje charakteristický vysoký tón resonancí v úzké trubici. KClO₄ + benzoát sodný je nejstabilnější formulace.',
       ing:[ {n:'Chloristan draselný',p:72}, {n:'Benzoát sodný',p:28} ],
       notes:'⚠️ Pouze 2 složky — žádné přísady! Citlivý na tření. Lisujte opatrně.' },
@@ -76,7 +76,7 @@ const DB_COMPOSITIONS = [
       notes:'Granulujte pro konzistentní tah. Testujte na malých vzorcích. Měřte specifický impuls.' },
     { id:16, name:'Raketové palivo — AP/HTPB',    cat:'rockets',   catL:'Raketová paliva', hazard:'high', youtubeId:'7V6dM8k4g2U',
       desc:'Kompozitní palivo pro středně výkonné modelové rakety. AP jako oxidátor, HTPB jako elastomerní pojivo i palivo.',
-      ing:[ {n:'Chloristan amonný (AP)',p:72}, {n:'HTPB pojivo',p:18}, {n:'Hliník 200mesh',p:10} ],
+      ing:[ {n:'Chloristan amonný (AP)',p:72}, {nWIth: 'HTPB pojivo',p:18}, {n:'Hliník 200mesh',p:10} ],
       notes:'Pokročilá formulace. Vyžaduje speciální formovací zařízení a bezpečnostní podmínky.' },
 
   // FOUNTAINS (Gold & Silver Fountains - 0l6Ebkp0ejQ)
