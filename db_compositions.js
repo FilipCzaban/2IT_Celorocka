@@ -50,7 +50,7 @@ const DB_COMPOSITIONS = [
       notes:'⚠️ Extrémně citlivá směs. Míchejte suchými nástroji. Max. 5 g najednou.' },
 
   // BURST (Display Shell Burst / Salute Explosion)
-    { id:11, name:'Burst charge — Granulovaný BP', cat:'burst',     catL:'Výbušné náplně',  hazard:'med', youtubeId:'-c93Qf8hH3w',
+    { id:11, name:'Burst charge — Granulovaný BP', cat:'burst',     catL:'Výbušné náplně',  hazard:'med', youtubeId:'_jATYcW05Jc',
       desc:'Granulovaný černý prach pro výbuch shellu. Granule zajišťují rovnoměrný a silný výbuch — prašný BP by deflagroval, ne detonoval.',
       ing:[ {n:'Dusičnan draselný',p:75}, {n:'Uhlí 80mesh',p:15}, {n:'Síra',p:10} ],
       notes:'MUSÍ být granulovaný pro správný výbuch. Hrubost granulí ovlivňuje razanci výbuchu.' },
