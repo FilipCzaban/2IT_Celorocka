@@ -80,7 +80,7 @@ const DB_COMPOSITIONS = [
       notes:'Pokročilá formulace. Vyžaduje speciální formovací zařízení a bezpečnostní podmínky.' },
 
   // FOUNTAINS (Gold & Silver Fountains - 0l6Ebkp0ejQ)
-    { id:17, name:'Zlatá fontána — Fe hoblovačky', cat:'fountains', catL:'Fontány',         hazard:'low', youtubeId:'DkvkJwpDlsw',
+    { id:17, name:'Zlatá fontána — Fe hoblovačky', cat:'fountains', catL:'Fontány',         hazard:'low', youtubeId:'gp8XjrTPnDI',
       desc:'Klasická zlatá fontána s hořícími železnými třískami. Oxidace Fe produkuje charakteristické zlatooranžové jiskry.',
       ing:[ {n:'Dusičnan draselný',p:55}, {n:'Železo hoblovačky',p:25}, {n:'Uhlí 80mesh',p:10}, {n:'Síra',p:5}, {n:'Dextrin',p:5} ],
       notes:'Hrubost železných třísek ovlivňuje délku a charakter jisker. Hruběji = delší jiskry.' },
@@ -106,7 +106,7 @@ const DB_COMPOSITIONS = [
   // SMOKE (Color Smoke Grenades - zI_tqrbmZoo)
     { id:22, name:'Červená dýmovnice',             cat:'smoke',     catL:'Dýmovnice',       hazard:'low', youtubeId:'zI_tqrbmZoo',
       desc:'Dýmovnice s červeným organickým barvivem. Laktóza jako palivo hoří pomalu a vytváří husté barevné dýmy.',
-      ing:[ {n:'Dusičnan draselný',p:30}, {n:'Laktóza',p:45}, {n:'Červeté barvivo',p:15}, {n:'NaHCO₃',p:7}, {n:'Dextrin',p:3} ],
+      ing:[ {n:'Dusičnan draselný',p:30}, {n:'Laktóza',p:45}, {n:'Červené barvivo',p:15}, {n:'NaHCO₃',p:7}, {n:'Dextrin',p:3} ],
       notes:'Citlivá na vlhkost — skladujte v hermeticky uzavřených nádobách. Sušte důkladně.' },
     { id:23, name:'Modrá dýmovnice',               cat:'smoke',     catL:'Dýmovnice',       hazard:'low', youtubeId:'p4A_F6QeI1I',
       desc:'Modrá dýmovnice s indigo barvivem. Vizuálně nejatraktivnější barva dýmu — modrá je v atmosféře výrazně viditelná.',
