@@ -20,7 +20,7 @@ const DB_COMPOSITIONS = [
       desc:'Oslnivě bílá hvězda s intenzitou přesahující 100 000 candel. Magnalium produkuje záblesky ve spektru viditelného světla.',
       ing:[ {n:'Dusičnan draselný',p:60}, {n:'Magnalium 100 mesh',p:25}, {n:'Dextrin',p:8}, {n:'Síra',p:7} ],
       notes:'Extrémně oslnivá — nikdy se nepřímo nedívejte při testu. Citlivost na tření a náraz.' },
-    { id:5,  name:'Zlatá hvězda — Uhlíková',      cat:'stars',     catL:'Hvězdy',          hazard:'low', youtubeId:'m1lk0n7zHrg',
+    { id:5,  name:'Zlatá hvězda — Uhlíková',      cat:'stars',     catL:'Hvězdy',          hazard:'low', youtubeId:'_9SbgrZV84I',
       desc:'Tradiční zlatá hvězda s hřejivým světlem. Základ na černém prachu — uhlíkové jiskry v oxidačním plameni dávají zlatý charakter.',
       ing:[ {n:'Dusičnan draselný',p:60}, {n:'Uhlí airfloat',p:20}, {n:'Síra',p:10}, {n:'Dextrin',p:8}, {n:'Olej pojivo',p:2} ],
       notes:'Skvělá pro začátečníky. Jedna z nejbezpečnějších hvězd.' },
