@@ -94,7 +94,7 @@ const DB_COMPOSITIONS = [
       notes:'Poměr Fe:Al ovlivňuje charakter jisker. Experimentujte s poměrem.' },
 
   // FLARES (Red road flare / Green Bengal light)
-    { id:20, name:'Červená flare — Signalizace',   cat:'flares',    catL:'Flares',          hazard:'med', youtubeId:'Q-3iP4m_7cM',
+    { id:20, name:'Červená flare — Signalizace',   cat:'flares',    catL:'Flares',          hazard:'med', youtubeId:'URfQ1NJ6d6k',
       desc:'Záchranná nebo signalizační světlice. Intenzivně červená díky strontiu. Hoří 60–120 s. Viditelná na km.',
       ing:[ {n:'Dusičnan strontnatý',p:55}, {n:'Hořčík Mg',p:20}, {n:'Parlon',p:15}, {n:'Dextrin',p:10} ],
       notes:'Vysoká teplota hoření. Drž za bezpečný konec. Nemiř na osoby nebo objekty.' },
