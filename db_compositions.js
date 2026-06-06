@@ -44,7 +44,7 @@ const DB_COMPOSITIONS = [
       desc:'Základní zápalná vrstva pro přenos ohně na hvězdy. Granulovaný nebo mokrý BP pokrývá hvězdu a zajišťuje spolehlivý start hoření.',
       ing:[ {n:'Dusičnan draselný',p:75}, {n:'Uhlí airfloat',p:15}, {n:'Síra',p:10} ],
       notes:'Aplikujte mokrou cestou (pasta s vodou). Suchý prach je citlivý. Důkladně sušte.' },
-    { id:10, name:'Hot Prime — Al/KClO₄',          cat:'primes',    catL:'Priming',         hazard:'high', youtubeId:'D5qvxNk6bsY',
+    { id:10, name:'Hot Prime — Al/KClO₄',          cat:'primes',    catL:'Priming',         hazard:'high',
       desc:'Vysoce reaktivní zápalná vrstva pro hvězdy vyžadující horký start. Flash-like složení zajišťuje okamžité a silné vznícení.',
       ing:[ {n:'Chloristan draselný',p:70}, {n:'Hliník airfloat',p:25}, {n:'Dextrin',p:5} ],
       notes:'⚠️ Extrémně citlivá směs. Míchejte suchými nástroji. Max. 5 g najednou.' },
