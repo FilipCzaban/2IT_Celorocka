@@ -12,7 +12,7 @@ const DB_COMPOSITIONS = [
       desc:'Intenzivně zelená hvězda. Barium emituje charakteristické zelené spektrální čáry (~505 nm). Toxická — práce v respirátoru.',
       ing:[ {n:'Dusičnan barnatý',p:61}, {n:'Magnalium 200 mesh',p:15}, {n:'Red Gum',p:10}, {n:'Chloristan draselný',p:9}, {n:'Dextrin',p:5} ],
       notes:'⚠️ Dusičnan barnatý je toxický. Pracujte v respirátoru v dobře větraném prostoru.' },
-    { id:3,  name:'Modrá hvězda — Měď/PVC',       cat:'stars',     catL:'Hvězdy',          hazard:'high', youtubeId:'0oRSqYRIJRo',
+    { id:3,  name:'Modrá hvězda — Měď/PVC',       cat:'stars',     catL:'Hvězdy',          hazard:'high', youtubeId:'saKdqpjel1Y',
       desc:'Nejtěžší barva v pyrotechnice. Měděné ionty v chlorovém prostředí emitují modrou (~430–460 nm). Velmi citlivá na přesnost poměrů.',
       ing:[ {n:'Chloristan draselný',p:60}, {n:'Hexachlorobenzén',p:8}, {n:'Síran měďnatý',p:20}, {n:'Parlon',p:7}, {n:'Red Gum',p:5} ],
       notes:'⚠️ Hexachlorobenzén je toxický. Modrá závisí na precizním poměru složek — odchylka >2% degraduje barvu.' },
@@ -71,7 +71,7 @@ const DB_COMPOSITIONS = [
 
   // ROCKETS (Model Rocket Launches - -rlpFX1LiGg)
     { id:15, name:'Raketové palivo — BKNO₃',      cat:'rockets',   catL:'Raketová paliva', hazard:'med', youtubeId:'-rlpFX1LiGg',
-      desc:'Tradiční modelové raketové palivo. BP základ s vyšším obsahem uhlí pro konsistentnější tah. Granulujte pro rovnoměrný tah.',
+      desc:'Tradiční modelové raketové palivo. BP základ s vyšším obsahem uhlí pro konzistentnější tah. Granulujte pro rovnoměrný tah.',
       ing:[ {n:'Dusičnan draselný',p:65}, {n:'Uhlí airfloat',p:20}, {n:'Síra',p:10}, {n:'Dextrin',p:5} ],
       notes:'Granulujte pro konzistentní tah. Testujte na malých vzorcích. Měřte specifický impuls.' },
     { id:16, name:'Raketové palivo — AP/HTPB',    cat:'rockets',   catL:'Raketová paliva', hazard:'high', youtubeId:'7V6dM8k4g2U',
