@@ -51,10 +51,10 @@ const DB_COMPOSITIONS = [
 
   // BURST (Display Shell Burst / Salute Explosion)
     { id:11, name:'Burst charge — Granulovaný BP', cat:'burst',     catL:'Výbušné náplně',  hazard:'med', youtubeId:'_jATYcW05Jc',
-      desc:'Granulovaný černý prach pro výbuch shellu. Granule zajišťují rovnoměrný a silný výbuch — prašný BP by deflagroval, ne detonoval.',
+      desc:'Granulovaný černý prach pro výbuch shellu. Granule zajiždí rovnoměrný a silný výbuch — prašný BP by deflagroval, ne detonoval.',
       ing:[ {n:'Dusičnan draselný',p:75}, {n:'Uhlí 80mesh',p:15}, {n:'Síra',p:10} ],
       notes:'MUSÍ být granulovaný pro správný výbuch. Hrubost granulí ovlivňuje razanci výbuchu.' },
-    { id:12, name:'Flash Prach — Záblesk/Zvuk',   cat:'burst',     catL:'Výbušné náplně',  hazard:'high', youtubeId:'VlX2b_9f95E',
+    { id:12, name:'Flash Prach — Záblesk/Zvuk',   cat:'burst',     catL:'Výbušné náplně',  hazard:'high', youtubeId:'cyuTE5TLJwk',
       desc:'Deflagrující slože pro intenzivní záblesk a hlasitý zvuk. NIKDY nemíchat >30 g a nikdy nemíchat jiné složky!',
       ing:[ {n:'Chloristan draselný',p:70}, {n:'Hliník airfloat',p:30} ],
       notes:'⚠️⚠️ EXTRÉMNÊ NEBEZPEČNÉ. Max. 30 g. Jen 2 složky. Citlivý na tření, náraz, teplo a ESD.' },
