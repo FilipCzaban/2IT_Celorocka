@@ -59,12 +59,6 @@ function applyTheme() {
   }
 }
 
-function toggleTheme() {
-  state.theme = state.theme === 'dark' ? 'light' : 'dark';
-  localStorage.setItem('pyro-theme', state.theme);
-  applyTheme();
-}
-
 // ══════════════════════════════════════════════════════════════
 // PARTICLES
 // ══════════════════════════════════════════════════════════════
@@ -269,10 +263,6 @@ function openModal(id) {
   const SHOW_VIDEOS = true;
   let videoHtml = '';
   if (SHOW_VIDEOS && c.youtubeId) {
-    const watchUrl = c.youtubeId.length === 11 
-      ? `https://www.youtube.com/watch?v=${c.youtubeId}`
-      : `https://youtu.be/${c.youtubeId}`;
-
     videoHtml = `
       <div class="modal__video-container">
         <iframe 
@@ -282,11 +272,6 @@ function openModal(id) {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
           allowfullscreen>
         </iframe>
-      </div>
-      <div class="modal__video-actions">
-        <a href="${watchUrl}" target="_blank" rel="noopener noreferrer" class="btn-yt">
-          Přehrát přímo na YouTube ↗
-        </a>
       </div>
     `;
   }
