@@ -24,7 +24,7 @@ const DB_COMPOSITIONS = [
       desc:'Tradiční zlatá hvězda s hřejivým světlem. Základ na černém prachu — uhlíkové jiskry v oxidačním plameni dávají zlatý charakter.',
       ing:[ {n:'Dusičnan draselný',p:60}, {n:'Uhlí airfloat',p:20}, {n:'Síra',p:10}, {n:'Dextrin',p:8}, {n:'Olej pojivo',p:2} ],
       notes:'Skvělá pro začátečníky. Jedna z nejbezpečnějších hvězd.' },
-    { id:6,  name:'Stříbrná hvězda — Ti jiskry', cat:'stars',     catL:'Hvězdy',          hazard:'med', youtubeId:'nu-DoCgs_CU',
+    { id:6,  name:'Stříbrná hvězda — Ti jiskry', cat:'stars',     catL:'Hvězdy',          hazard:'med', youtubeId:'H31l_2pysU8',
       desc:'Hvězda s brilantními titanovými jiskrami. Titan produkuje bílé záblesky při oxidaci — efekt "prskavky" přímo v kompozici.',
       ing:[ {n:'Dusičnan draselný',p:58}, {n:'Titan hrubý',p:20}, {n:'Uhlí 80mesh',p:12}, {n:'Dextrin',p:7}, {n:'Síra',p:3} ],
       notes:'Titan skladujte odděleně od oxidátorů. Jiskry jsou intensivní — vhodné vzdálenosti pro diváky.' },
