@@ -16,7 +16,7 @@ const DB_COMPOSITIONS = [
       desc:'Nejtěžší barva v pyrotechnice. Měděné ionty v chlorovém prostředí emitují modrou (~430–460 nm). Velmi citlivá na přesnost poměrů.',
       ing:[ {n:'Chloristan draselný',p:60}, {n:'Hexachlorobenzén',p:8}, {n:'Síran měďnatý',p:20}, {n:'Parlon',p:7}, {n:'Red Gum',p:5} ],
       notes:'⚠️ Hexachlorobenzén je toxický. Modrá závisí na precizním poměru složek — odchylka >2% degraduje barvu.' },
-    { id:4,  name:'Bílá hvězda — Magnalium',      cat:'stars',     catL:'Hvězdy',          hazard:'med', youtubeId:'rjXm8zMpOvE',
+    { id:4,  name:'Bílá hvězda — Magnalium',      cat:'stars',     catL:'Hvězdy',          hazard:'med', youtubeId:'GQua_vgWhWw',
       desc:'Oslnivě bílá hvězda s intenzitou přesahující 100 000 candel. Magnalium produkuje záblesky ve spektru viditelného světla.',
       ing:[ {n:'Dusičnan draselný',p:60}, {n:'Magnalium 100 mesh',p:25}, {n:'Dextrin',p:8}, {n:'Síra',p:7} ],
       notes:'Extrémně oslnivá — nikdy se nepřímo nedívejte při testu. Citlivost na tření a náraz.' },
