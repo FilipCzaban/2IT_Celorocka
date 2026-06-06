@@ -64,7 +64,7 @@ const DB_COMPOSITIONS = [
       desc:'Píšťalka produkuje charakteristický vysoký tón resonancí v úzké trubici. KClO₄ + benzoát sodný je nejstabilnější formulace.',
       ing:[ {n:'Chloristan draselný',p:72}, {n:'Benzoát sodný',p:28} ],
       notes:'⚠️ Pouze 2 složky — žádné přísady! Citlivý na tření. Lisujte opatrně.' },
-    { id:14, name:'Whistle Mix — Salicylát',       cat:'whistle',   catL:'Whistle Mix',     hazard:'high', youtubeId:'6R8c8T3V-gM',
+    { id:14, name:'Whistle Mix — Salicylát',       cat:'whistle',   catL:'Whistle Mix',     hazard:'high', youtubeId:'ldJwkt99wyI',
       desc:'Alternativa s salicylátem sodným. Mírně odlišný tón a charakter hoření. Trochu vyšší obsah paliva.',
       ing:[ {n:'Chloristan draselný',p:67}, {n:'Salicylát sodný',p:33} ],
       notes:'⚠️ Citlivý na tření. Pracujte s malými množstvími. Lisování opatrně.' },
@@ -76,7 +76,7 @@ const DB_COMPOSITIONS = [
       notes:'Granulujte pro konzistentní tah. Testujte na malých vzorcích. Měřte specifický impuls.' },
     { id:16, name:'Raketové palivo — AP/HTPB',    cat:'rockets',   catL:'Raketová paliva', hazard:'high', youtubeId:'7V6dM8k4g2U',
       desc:'Kompozitní palivo pro středně výkonné modelové rakety. AP jako oxidátor, HTPB jako elastomerní pojivo i palivo.',
-      ing:[ {n:'Chloristan amonný (AP)',p:72}, {nWIth: 'HTPB pojivo',p:18}, {n:'Hliník 200mesh',p:10} ],
+      ing:[ {n:'Chloristan amonný (AP)',p:72}, {n:'HTPB pojivo',p:18}, {n:'Hliník 200mesh',p:10} ],
       notes:'Pokročilá formulace. Vyžaduje speciální formovací zařízení a bezpečnostní podmínky.' },
 
   // FOUNTAINS (Gold & Silver Fountains - 0l6Ebkp0ejQ)
