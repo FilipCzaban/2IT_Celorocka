@@ -88,7 +88,7 @@ const DB_COMPOSITIONS = [
       desc:'Fontána s bílými titanovými jiskrami a charakteristickým praskáním. Jeden z nejatraktivnějších fontánových efektů.',
       ing:[ {n:'Dusičnan draselný',p:55}, {n:'Titan hrubý',p:20}, {n:'Uhlí airfloat',p:12}, {n:'Síra',p:8}, {n:'Dextrin',p:5} ],
       notes:'Titan skladujte odděleně od oxidátorů. Jiskry jsou oslnivé.' },
-    { id:19, name:'Zlatostříbrná fontána — Al/Fe', cat:'fountains', catL:'Fontány',         hazard:'med', youtubeId:'UjZiESiP-1w',
+    { id:19, name:'Zlatostříbrná fontána — Al/Fe', cat:'fountains', catL:'Fontány',         hazard:'med', youtubeId:'Q5CSGHWnVMU',
       desc:'Kombinace zlatých (Fe) a stříbřité (Al) jisker. Vizuálně atraktivní dvoubarevný efekt.',
       ing:[ {n:'Dusičnan draselný',p:58}, {n:'Železo hoblovačky',p:16}, {n:'Hliník 30mesh',p:12}, {n:'Uhlí 80mesh',p:8}, {n:'Dextrin',p:6} ],
       notes:'Poměr Fe:Al ovlivňuje charakter jisker. Experimentujte s poměrem.' },
