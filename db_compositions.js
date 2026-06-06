@@ -122,7 +122,7 @@ const DB_COMPOSITIONS = [
       desc:'Tradiční zlatá jiskrnice. Ocelový drát pokrytý kastou s železnými třískami. Klasika silvestrovských oslav.',
       ing:[ {n:'Dusičnan draselný',p:62}, {n:'Železo jemné',p:18}, {n:'Hliník 200mesh',p:7}, {n:'Uhlí airfloat',p:5}, {n:'Dextrin',p:8} ],
       notes:'Namočte drát do kaše opakovaně (3–5× vrství). Sušte pečlivě po každé vrstvě.' },
-    { id:26, name:'Stříbrná jiskrnice — MgAl',     cat:'sparklers', catL:'Jiskrnice',       hazard:'med', youtubeId:'cM1W32q3P2Y',
+    { id:26, name:'Stříbrná jiskrnice — MgAl',     cat:'sparklers', catL:'Jiskrnice',       hazard:'med', youtubeId:'kE85Hel8UjA',
       desc:'Jiskrnice s magnaliem dávajícím studené stříbřité jiskry. Bezpečnější pro použití díky nižší teplotě jisker.',
       ing:[ {n:'Dusičnan barnatý',p:65}, {n:'Magnalium 100mesh',p:20}, {n:'Dextrin',p:10}, {n:'Voda',p:5} ],
       notes:'Sušte VELMI důkladně — magnalium reaguje s vlhkostí. Min. 48 h sušení.' }
