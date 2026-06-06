@@ -59,7 +59,6 @@ function applyTheme() {
   }
 }
 
-// Funkce pro přepínání témat
 function toggleTheme() {
   state.theme = state.theme === 'dark' ? 'light' : 'dark';
   localStorage.setItem('pyro-theme', state.theme);
@@ -141,21 +140,6 @@ function renderChemicals() {
       </div>
     </article>
   `).join('');
-}
-
-function initChemTabs() {
-  const tabs = $$('.tab');
-  tabs.forEach(t => {
-    t.addEventListener('click', () => {
-      tabs.forEach(x => { x.classList.remove('tab--active'); x.setAttribute('aria-selected','false'); });
-      t.classList.add('tab--active');
-      t.setAttribute('aria-selected','true');
-      state.chemTab = t.dataset.tab;
-      renderChemicals();
-    });
-    t.addEventListener('keydown', e => { if (e.key==='Enter'||e.key===' ') { e.preventDefault(); t.click(); } });
-  });
-  renderChemicals();
 }
 
 // ══════════════════════════════════════════════════════════════
@@ -285,6 +269,10 @@ function openModal(id) {
   const SHOW_VIDEOS = true;
   let videoHtml = '';
   if (SHOW_VIDEOS && c.youtubeId) {
+    const watchUrl = c.youtubeId.length === 11 
+      ? `https://www.youtube.com/watch?v=${c.youtubeId}`
+      : `https://youtu.be/${c.youtubeId}`;
+
     videoHtml = `
       <div class="modal__video-container">
         <iframe 
@@ -294,6 +282,11 @@ function openModal(id) {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
           allowfullscreen>
         </iframe>
+      </div>
+      <div class="modal__video-actions">
+        <a href="${watchUrl}" target="_blank" rel="noopener noreferrer" class="btn-yt">
+          Přehrát přímo na YouTube ↗
+        </a>
       </div>
     `;
   }
@@ -339,7 +332,6 @@ function initModal() {
 // ══════════════════════════════════════════════════════════════
 // DEFINITIONS
 // ══════════════════════════════════════════════════════════════
-// Rejstřík definic
 function renderAZNav() {
   const row = $('#azRow');
   if (!row) return;
