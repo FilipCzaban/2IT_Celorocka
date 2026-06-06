@@ -34,7 +34,7 @@ const DB_COMPOSITIONS = [
       desc:'Tradiční blikající glitter. Sb₂S₃ s KNO₃ vytváří reakci se zpožděnou detonací — charakteristické zlaté blikání za hvězdou.',
       ing:[ {n:'Dusičnan draselný',p:60}, {n:'Antimony sulfid',p:10}, {n:'Uhlí airfloat',p:6}, {n:'Síra',p:14}, {n:'Dextrin',p:10} ],
       notes:'⚠️ Antimony sulfid je toxický. Neskladujte ve vlhkém prostředí — reaktivita se ztrácí.' },
-    { id:8,  name:'Barium Glitter — Zelenozlatý', cat:'glitters',  catL:'Glittery',        hazard:'high', youtubeId:'i8l5ZtX9x5M',
+    { id:8,  name:'Barium Glitter — Zelenozlatý', cat:'glitters',  catL:'Glittery',        hazard:'high', youtubeId:'tYxo20_C6HA',
       desc:'Varianta glitteru s barnatými ionty. Zelenozlatý nádech s výrazným blikáním. Kombinace glitter efektu se slabou barvou.',
       ing:[ {n:'Dusičnan barnatý',p:62}, {n:'Antimony sulfid',p:8}, {n:'Uhlí 200mesh',p:6}, {n:'Síra',p:14}, {n:'Dextrin',p:10} ],
       notes:'Toxické složky — barium i antimony. Používajte respirátor FFP3.' },
