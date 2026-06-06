@@ -1,20 +1,41 @@
-# PyroFiles CZ – Pyrotechnická databáze
+# PyroData CZ – Pyrotechnická databáze
 
 ## Úvod
-* **Téma:** Studijní reference pyrotechnických chemikálií, kompozic (receptů) a definic.
+**PyroData CZ** je moderní, plně responzivní a přístupná pyrotechnická databáze určená pro hobbyisty, chemické nadšence a studenty. Tento projekt slouží jako komplexní referenční příručka pro:
+* **Chemikálie:** Přehledně roztříděné podle funkcí (pojiva, paliva, kovy, oxidovadla).
+* **Kompozice:** Receptury na výrobu pyrotechnických efektů (hvězdy, glittery, fontány, dýmovnice, jiskrnice atd.) včetně tabulky složení a bezpečného postupu.
+* **Definice:** Odborný abecední rejstřík A–Z vysvětlující klíčové pojmy v pyrotechnice.
+
+Stránka je navržena s důrazem na moderní tmavý design (s motivem ohně a jisker), plnou přístupnost a okamžité vyhledávání. Veškeré informace na tomto webu mají výhradně vzdělávací charakter.
+
 * **Živý web (GitHub Pages):** [https://filipczaban.github.io/2IT_Celorocka/](https://filipczaban.github.io/2IT_Celorocka/)
-* **Autor:** Filip Czaban (ročníkový projekt, 2IT)
+* **Autor projektu:** Filip Czaban (ročníkový projekt, 2IT)
+
+---
 
 ## Použité technologie
-* **HTML5 / CSS3 / ES6+ JS** (čistý kód bez externích knihoven/frameworků).
-* **IDE:** VS Code (v1.90.2).
+Projekt důsledně dodržuje zásadu **nepoužívat žádné externí knihovny ani frameworky** (No-Framework Policy). Vše je napsáno na zelené louce:
+* **HTML5:** Sémantický kód pro strukturu stránky a přístupnost.
+* **CSS3 (Vanilla CSS):** Pokročilý design systém s CSS proměnnými, Flexbox a Grid rozložením, klíčovými animacemi a podporou temného/světlého režimu.
+* **JavaScript (Vanilla JS - ES6+):** Rychlá klientská logika, vyhledávací index a dynamické filtrování v reálném čase bez nutnosti načítat data ze serveru.
+* **Vývojové prostředí (IDE):** Visual Studio Code (verze 1.90.2 nebo novější).
+
+---
 
 ## Adresářová struktura
-* `index.html` – Hlavní šablona a struktura webu.
-* `style.css` – Globální design a temný/světlý režim.
-* `db_data.js` / `db_compositions.js` – Statická data a rozdělení DB.
-* `script.js` – Klientský vyhledávač a UI logika.
-* `sitemap.xml` / `robots.txt` – Konfigurační soubory pro vyhledávače.
+Projekt má čisté rozložení souborů přímo v kořenovém adresáři repozitáře, což usnadňuje přímé nasazení na GitHub Pages bez nutnosti jakýchkoliv build skriptů:
+
+```text
+2IT_Celorocka/
+├── index.html            # Hlavní sémantická šablona a struktura webu
+├── style.css             # Globální CSS (design systém, proměnné, režimy a animace)
+├── db_data.js            # Statická databáze chemikálií a slovníkových definic A-Z
+├── db_compositions.js    # Databáze receptur (kompozic) a sestavení vyhledávacího indexu
+├── script.js             # Hlavní JS logika (vyhledávání, filtry, přepínání témat, jiskry)
+├── sitemap.xml           # Mapa stránek pro vyhledávače
+├── robots.txt            # Pokyny pro vyhledávací roboty
+└── README.md             # Kompletní technická dokumentace (tento soubor)
+```
 
 ---
 
@@ -26,9 +47,9 @@ V této části detailně rozebíráme 6 klíčových oblastí optimalizace, kte
 * **Teoretický popis:** Rychlost načítání a zpracování (Time to Interactive - TTI, Total Blocking Time - TBT) byla optimalizována rozdělením monolitického JavaScriptového kódu do samostatných souborů: statická data (`db_data.js`, `db_compositions.js`) a samotná logika (`script.js`). Tím se zabrání zbytečnému parsování velkého bloku dat v rámci jednoho vlákna a prohlížeč může skripty stahovat asynchronně. Skripty jsou umístěny na konci značky `<body>`, aby neblokovaly renderování samotného HTML stromu.
 * **Výstřižek kódu:**
   ```html
-  <script src="db_data.js?v=1.2.6"></script>
-  <script src="db_compositions.js?v=1.2.6"></script>
-  <script src="script.js?v=1.2.6"></script>
+  <script src="db_data.js"></script>
+  <script src="db_compositions.js"></script>
+  <script src="script.js"></script>
   ```
 * **Vysvětlení:** Rozdělením kódu na datové moduly a aplikační logiku se kód stal modulárním a snadno spravovatelným. Prohlížeč načítá a zpracovává data postupně, což výrazně zrychluje první vykreslení obsahu (First Contentful Paint - FCP).
 
@@ -76,7 +97,7 @@ V této části detailně rozebíráme 6 klíčových oblastí optimalizace, kte
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://filipczaban.github.io/2IT_Celorocka/">
   <meta property="og:title" content="PyroFiles CZ – Pyrotechnická databáze">
-  <meta property="og:description" content="Komplexní pyrotechnická databáze pro nadšence. Chemikálie, kompozice, definice.">
+  <meta property="og:description" content="Komplexní pyrotechnická databáze pro nadšence. Chemikálie, kompozice, definice a bezpečnostní informace.">
   <meta property="og:image" content="https://filipczaban.github.io/2IT_Celorocka/og-image.jpg">
   <meta name="twitter:card" content="summary_large_image">
   ```
@@ -132,7 +153,13 @@ Během vývoje byly použity tyto klíčové a zajímavé dotazy pro AI:
 
 Pro lokální zprovoznění a testování projektu na vašem počítači nepotřebujete instalovat žádné kompilátory, Node.js ani buildovací nástroje. Projekt běží přímo v prohlížeči.
 
-### Krok 1: Spuštění lokálního webového serveru
+### Krok 1: Klonování repozitáře
+Otevřete terminál a stáhněte si projekt do svého počítače:
+```bash
+git clone https://github.com/FilipCzaban/2IT_Celorocka.git
+```
+
+### Krok 2: Spuštění lokálního webového serveru
 Z důvodu bezpečnostních politik prohlížečů (CORS) a načítání modulů doporučujeme spouštět web přes lokální server, nikoliv přímým poklepáním na soubor v průzkumníku:
 
 * **Možnost A (Doporučená – VS Code a Live Server):**
@@ -147,3 +174,13 @@ Z důvodu bezpečnostních politik prohlížečů (CORS) a načítání modulů 
   python -m http.server 8000
   ```
   Následně otevřete prohlížeč a přejděte na adresu `http://localhost:8000/`.
+
+---
+
+## Živý web na GitHubu (GitHub Pages)
+Nemusíte nic stahovat a instalovat, pokud se chcete rovnou podívat na funkční verzi. Web je nepřetržitě nasazen a spuštěn jako statická stránka přes GitHub Pages na této adrese:
+
+**[👉 Spustit živý web PyroData CZ 👈](https://filipczaban.github.io/2IT_Celorocka/)**
+```text
+https://filipczaban.github.io/2IT_Celorocka/
+```
