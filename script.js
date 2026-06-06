@@ -59,6 +59,7 @@ function applyTheme() {
   }
 }
 
+// Toggle theme function
 function toggleTheme() {
   state.theme = state.theme === 'dark' ? 'light' : 'dark';
   localStorage.setItem('pyro-theme', state.theme);
