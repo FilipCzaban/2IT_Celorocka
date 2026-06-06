@@ -7,7 +7,7 @@ const DB_COMPOSITIONS = [
     { id:1,  name:'Červená hvězda — Strontium',   cat:'stars',     catL:'Hvězdy',          hazard:'med', youtubeId:'PSScd1m03pc',
       desc:'Klasická karmínová hvězda. Strontium emituje spektrální čáry v červené oblasti (~640 nm). Parlon stabilizuje spektrální emisi.',
       ing:[ {n:'Dusičnan strontnatý',p:55}, {n:'Magnalium 200 mesh',p:15}, {n:'Parlon',p:10}, {n:'Chloristan draselný',p:15}, {n:'Dextrin',p:5} ],
-      notes:'Přidávejte Magnalium jako poslední. Vyhněte se kontaminaci sírou — reaguje s perchloridem.' },
+      notes:'Přidávejte Magnalium jako poslední. Vyhněse kontaminaci sírou — reaguje s perchloridem.' },
     { id:2,  name:'Zelená hvězda — Barium',       cat:'stars',     catL:'Hvězdy',          hazard:'high', youtubeId:'U645hnBORQE',
       desc:'Intenzivně zelená hvězda. Barium emituje charakteristické zelené spektrální čáry (~505 nm). Toxická — práce v respirátoru.',
       ing:[ {n:'Dusičnan barnatý',p:61}, {n:'Magnalium 200 mesh',p:15}, {n:'Red Gum',p:10}, {n:'Chloristan draselný',p:9}, {n:'Dextrin',p:5} ],
@@ -41,7 +41,7 @@ const DB_COMPOSITIONS = [
 
   // PRIMES (Black Powder / Flash Powder Burn Tests)
     { id:9,  name:'Prime — Černý prach',           cat:'primes',    catL:'Priming',         hazard:'med', youtubeId:'Z-tkGeYU2MQ',
-      desc:'Základní zápalná vrstva pro přonos ohně na hvězdy. Granulovaný nebo mokrý BP pokrývá hvězdu a zajišťuje spolehlivý start hoření.',
+      desc:'Základní zápalná vrstva pro přenos ohně na hvězdy. Granulovaný nebo mokrý BP pokrývá hvězdu a zajišťuje spolehlivý start hoření.',
       ing:[ {n:'Dusičnan draselný',p:75}, {n:'Uhlí airfloat',p:15}, {n:'Síra',p:10} ],
       notes:'Aplikujte mokrou cestou (pasta s vodou). Suchý prach je citlivý. Důkladně sušte.' },
     { id:10, name:'Hot Prime — Al/KClO₄',          cat:'primes',    catL:'Priming',         hazard:'high',
@@ -112,7 +112,7 @@ const DB_COMPOSITIONS = [
       desc:'Modrá dýmovnice s indigo barvivem. Vizuálně nejatraktivnější barva dýmu — modrá je v atmosféře výrazně viditelná.',
       ing:[ {n:'Dusičnan draselný',p:30}, {n:'Laktóza',p:45}, {n:'Modré barvivo Indigo',p:15}, {n:'NaHCO₃',p:7}, {n:'Dextrin',p:3} ],
       notes:'Citlivost na vlhkost. Barvivo nesmí být příliš jemné — zhorší hoření.' },
-    { id:24, name:'Fialová dýmovnice',              cat:'smoke',     catL:'Dýmovnice',       hazard:'low', youtubeId:'f5G_z8mKx9S',
+    { id:24, name:'Fialová dýmovnice',              cat:'smoke',     catL:'Dýmovnice',       hazard:'low', youtubeId:'axRcCa4dCVk',
       desc:'Fialová dýmovnice kombinující červené a modré barvivo. Vzácnější a vizuálně velmi atraktivní barva.',
       ing:[ {n:'Dusičnan draselný',p:30}, {n:'Laktóza',p:42}, {n:'Fialové barvivo',p:18}, {n:'NaHCO₃',p:7}, {n:'Dextrin',p:3} ],
       notes:'Fialová je náchylná na rozklad — testujte barvu dýmu na slunci před použitím.' },
