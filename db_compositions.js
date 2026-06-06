@@ -84,7 +84,7 @@ const DB_COMPOSITIONS = [
       desc:'Klasická zlatá fontána s hořícími železnými třískami. Oxidace Fe produkuje charakteristické zlatooranžové jiskry.',
       ing:[ {n:'Dusičnan draselný',p:55}, {n:'Železo hoblovačky',p:25}, {n:'Uhlí 80mesh',p:10}, {n:'Síra',p:5}, {n:'Dextrin',p:5} ],
       notes:'Hrubost železných třísek ovlivňuje délku a charakter jisker. Hruběji = delší jiskry.' },
-    { id:18, name:'Titanová fontána — bílé jiskry',cat:'fountains', catL:'Fontány',         hazard:'med', youtubeId:'nu-DoCgs_CU',
+    { id:18, name:'Titanová fontána — bílé jiskry',cat:'fountains', catL:'Fontány',         hazard:'med', youtubeId:'Q-GX1BWJt6s',
       desc:'Fontána s bílými titanovými jiskrami a charakteristickým praskáním. Jeden z nejatraktivnějších fontánových efektů.',
       ing:[ {n:'Dusičnan draselný',p:55}, {n:'Titan hrubý',p:20}, {n:'Uhlí airfloat',p:12}, {n:'Síra',p:8}, {n:'Dextrin',p:5} ],
       notes:'Titan skladujte odděleně od oxidátorů. Jiskry jsou oslnivé.' },
