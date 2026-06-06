@@ -59,6 +59,12 @@ function applyTheme() {
   }
 }
 
+function toggleTheme() {
+  state.theme = state.theme === 'dark' ? 'light' : 'dark';
+  localStorage.setItem('pyro-theme', state.theme);
+  applyTheme();
+}
+
 // ══════════════════════════════════════════════════════════════
 // PARTICLES
 // ══════════════════════════════════════════════════════════════
@@ -134,6 +140,21 @@ function renderChemicals() {
       </div>
     </article>
   `).join('');
+}
+
+function initChemTabs() {
+  const tabs = $$('.tab');
+  tabs.forEach(t => {
+    t.addEventListener('click', () => {
+      tabs.forEach(x => { x.classList.remove('tab--active'); x.setAttribute('aria-selected','false'); });
+      t.classList.add('tab--active');
+      t.setAttribute('aria-selected','true');
+      state.chemTab = t.dataset.tab;
+      renderChemicals();
+    });
+    t.addEventListener('keydown', e => { if (e.key==='Enter'||e.key===' ') { e.preventDefault(); t.click(); } });
+  });
+  renderChemicals();
 }
 
 // ══════════════════════════════════════════════════════════════
