@@ -74,7 +74,7 @@ const DB_COMPOSITIONS = [
       desc:'Tradiční modelové raketové palivo. BP základ s vyšším obsahem uhlí pro konzistentnější tah. Granulujte pro rovnoměrný tah.',
       ing:[ {n:'Dusičnan draselný',p:65}, {n:'Uhlí airfloat',p:20}, {n:'Síra',p:10}, {n:'Dextrin',p:5} ],
       notes:'Granulujte pro konzistentní tah. Testujte na malých vzorcích. Měřte specifický impuls.' },
-    { id:16, name:'Raketové palivo — AP/HTPB',    cat:'rockets',   catL:'Raketová paliva', hazard:'high', youtubeId:'7V6dM8k4g2U',
+    { id:16, name:'Raketové palivo — AP/HTPB',    cat:'rockets',   catL:'Raketová paliva', hazard:'high', youtubeId:'2v-4QmAM-gE',
       desc:'Kompozitní palivo pro středně výkonné modelové rakety. AP jako oxidátor, HTPB jako elastomerní pojivo i palivo.',
       ing:[ {n:'Chloristan amonný (AP)',p:72}, {n:'HTPB pojivo',p:18}, {n:'Hliník 200mesh',p:10} ],
       notes:'Pokročilá formulace. Vyžaduje speciální formovací zařízení a bezpečnostní podmínky.' },
@@ -106,7 +106,7 @@ const DB_COMPOSITIONS = [
   // SMOKE (Color Smoke Grenades - zI_tqrbmZoo)
     { id:22, name:'Červená dýmovnice',             cat:'smoke',     catL:'Dýmovnice',       hazard:'low', youtubeId:'zI_tqrbmZoo',
       desc:'Dýmovnice s červeným organickým barvivem. Laktóza jako palivo hoří pomalu a vytváří husté barevné dýmy.',
-      ing:[ {n:'Dusičnan draselný',p:30}, {n:'Laktóza',p:45}, {n:'Červené barvivo',p:15}, {n:'NaHCO₃',p:7}, {n:'Dextrin',p:3} ],
+      ing:[ {n:'Dusičnan draselný',p:30}, {n:'Laktóza',p:45}, {n:'Červeté barvivo',p:15}, {n:'NaHCO₃',p:7}, {n:'Dextrin',p:3} ],
       notes:'Citlivá na vlhkost — skladujte v hermeticky uzavřených nádobách. Sušte důkladně.' },
     { id:23, name:'Modrá dýmovnice',               cat:'smoke',     catL:'Dýmovnice',       hazard:'low', youtubeId:'p4A_F6QeI1I',
       desc:'Modrá dýmovnice s indigo barvivem. Vizuálně nejatraktivnější barva dýmu — modrá je v atmosféře výrazně viditelná.',
