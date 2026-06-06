@@ -70,7 +70,7 @@ const DB_COMPOSITIONS = [
       notes:'⚠️ Citlivý na tření. Pracujte s malými množstvími. Lisování opatrně.' },
 
   // ROCKETS (Model Rocket Launches - -rlpFX1LiGg)
-    { id:15, name:'Raketové palivo — BKNO₃',      cat:'rockets',   catL:'Raketová paliva', hazard:'med', youtubeId:'-rlpFX1LiGg',
+    { id:15, name:'Raketové palivo — BKNO₃',      cat:'rockets',   catL:'Raketová paliva', hazard:'med', youtubeId:'6OzusrkUV7M',
       desc:'Tradiční modelové raketové palivo. BP základ s vyšším obsahem uhlí pro konzistentnější tah. Granulujte pro rovnoměrný tah.',
       ing:[ {n:'Dusičnan draselný',p:65}, {n:'Uhlí airfloat',p:20}, {n:'Síra',p:10}, {n:'Dextrin',p:5} ],
       notes:'Granulujte pro konzistentní tah. Testujte na malých vzorcích. Měřte specifický impuls.' },
