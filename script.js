@@ -59,7 +59,6 @@ function applyTheme() {
   }
 }
 
-// Toggle theme function
 function toggleTheme() {
   state.theme = state.theme === 'dark' ? 'light' : 'dark';
   localStorage.setItem('pyro-theme', state.theme);
@@ -141,21 +140,6 @@ function renderChemicals() {
       </div>
     </article>
   `).join('');
-}
-
-function initChemTabs() {
-  const tabs = $$('.tab');
-  tabs.forEach(t => {
-    t.addEventListener('click', () => {
-      tabs.forEach(x => { x.classList.remove('tab--active'); x.setAttribute('aria-selected','false'); });
-      t.classList.add('tab--active');
-      t.setAttribute('aria-selected','true');
-      state.chemTab = t.dataset.tab;
-      renderChemicals();
-    });
-    t.addEventListener('keydown', e => { if (e.key==='Enter'||e.key===' ') { e.preventDefault(); t.click(); } });
-  });
-  renderChemicals();
 }
 
 // ══════════════════════════════════════════════════════════════
@@ -573,5 +557,5 @@ document.addEventListener('DOMContentLoaded', () => {
   $('#themeBtn')?.addEventListener('click', toggleTheme);
 
   console.log('%c🔥 PyroData CZ', 'color:#ff6b00;font-size:22px;font-weight:900;');
-  console.log('%cŠkolní projekt 2IT · Filip Czaban · Vanilla JS/CSS/HTML', 'color:#ff9500');
+  console.log('%cPyroFiles CZ · Filip Czaban · Vanilla JS/CSS/HTML', 'color:#ff9500');
 });
