@@ -45,10 +45,11 @@ Projekt má čisté rozložení souborů přímo v kořenovém adresáři repozi
 * **Teoretický popis:** Rozdělení JS na data a logiku. Načítání skriptů na konci `<body>` pro neblokující renderování.
 * **Výstřižek kódu:**
   ```html
-  <script src="db_compositions.js?v=1.2.6"></script>
-  <script src="script.js?v=1.2.6"></script>
+  <script src="db_data.js?v=1.2.8"></script>
+  <script src="db_compositions.js?v=1.2.8"></script>
+  <script src="script.js?v=1.2.8"></script>
   ```
-* **Vysvětlení:** Zamezuje zpoždění načtení stránky. Parametr `?v=1.2.6` invaliduje mezipaměť (cache-buster).
+* **Vysvětlení:** Zamezuje zpoždění načtení stránky. Parametr `?v=1.2.8` invaliduje mezipaměť (cache-buster).
 
 ### 2. SEO (Search Engine Optimization)
 * **Teoretický popis:** Optimalizace pro vyhledávače pomocí sémantických tagů a strukturovaných dat JSON-LD.
