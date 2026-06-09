@@ -314,7 +314,7 @@ a:hover { color: var(--fire-2); }
   background: var(--bg-2); border: 1px solid var(--bdr);
   border-radius: var(--r-s); padding: .15rem .6rem;
   font-size: .7rem; font-family: var(--mono);
-  color: var(--txt-3); pointer-events: none;
+  color: var(--txt-2); pointer-events: none;
 }
 
 /* Dropdown */
@@ -725,6 +725,9 @@ mark { background: rgba(255,107,0,.25); color: var(--fire-2); border-radius: 2px
 .btt:hover { transform: translateY(-3px); box-shadow: var(--sh-fl); }
 .btt[hidden] { display: none; }
 
+/* ================================================================
+   BACK TO TOP
+================================================================ */
 /* ================================================================
    RESPONSIVE
 ================================================================ */
