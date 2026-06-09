@@ -226,7 +226,7 @@ function renderCompositions(q = '') {
         <td>${i.p}%</td>
       </tr>`).join('');
     const more = c.ing.length > 4
-      ? `<tr><td colspan="2" style="color:var(--txt-3);font-style:italic">+ ${c.ing.length - 4} další…</td></tr>`
+      ? `<tr><td colspan="2" style="color:var(--txt-2);font-style:italic">+ ${c.ing.length - 4} další…</td></tr>`
       : '';
 
     return `
@@ -323,6 +323,7 @@ function openModal(id) {
   $('#modalClose')?.focus();
 }
 
+// Close modal...
 function closeModal() {
   const wrap = $('#modalWrap');
   if (wrap) { wrap.hidden = true; wrap.setAttribute('hidden',''); }
@@ -464,7 +465,7 @@ function showSearchResults(q, drop) {
   });
 
   if (!res.length) {
-    drop.innerHTML = `<div class="sdr-item"><div class="sdr-item__name" style="color:var(--txt-3)">Žádné výsledky…</div></div>`;
+    drop.innerHTML = `<div class="sdr-item"><div class="sdr-item__name" style="color:var(--txt-2)">Žádné výsledky…</div></div>`;
   } else {
     drop.innerHTML = res.slice(0, 8).map((r, i) => `
       <div class="sdr-item" tabindex="0" role="option" data-anchor="${r.anchor}" ${r.id ? `data-id="${r.id}"` : ''}>
