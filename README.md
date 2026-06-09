@@ -18,6 +18,7 @@ Projekt důsledně dodržuje zásadu **nepoužívat žádné externí knihovny a
 * **HTML5:** Sémantický kód pro strukturu stránky a přístupnost.
 * **CSS3 (Vanilla CSS):** Pokročilý design systém s CSS proměnnými, Flexbox a Grid rozložením, klíčovými animacemi a podporou temného/světlého režimu.
 * **JavaScript (Vanilla JS - ES6+):** Rychlá klientská logika, vyhledávací index a dynamické filtrování v reálném čase bez nutnosti načítat data ze serveru.
+* **Service Worker (PWA):** Asynchronní skript na pozadí zajišťující offline ukládání kritických zdrojů do mezipaměti (Cache API) a eliminaci prodlevy načítání.
 * **Vývojové prostředí (IDE):** Visual Studio Code (verze 1.90.2 nebo novější).
 
 ---
@@ -32,6 +33,7 @@ Projekt má čisté rozložení souborů přímo v kořenovém adresáři repozi
 ├── db_data.js            # Statická databáze chemikálií a slovníkových definic A-Z
 ├── db_compositions.js    # Databáze receptur (kompozic) a sestavení vyhledávacího indexu
 ├── script.js             # Hlavní JS logika (vyhledávání, filtry, přepínání témat, jiskry)
+├── sw.js                 # Service Worker pro offline režim a caching zdrojů
 ├── sitemap.xml           # Mapa stránek pro vyhledávače
 ├── robots.txt            # Pokyny pro vyhledávací roboty
 └── README.md             # Kompletní technická dokumentace (tento soubor)
