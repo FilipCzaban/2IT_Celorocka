@@ -42,15 +42,15 @@ Projekt má čisté rozložení souborů přímo v kořenovém adresáři repozi
 ## Technický rozbor (Optimalizace)
 
 ### 1. Výkon (Performance)
-* **Teoretický popis:** Rozdělení JS na data a logiku. Použití atributu `defer` pro asynchronní stahování a spouštění skriptů bez blokování HTML parseru a optimalizace načítání Google Fonts přes `rel="preload"`.
+* **Teoretický popis:** Rozdělení JS na data a logiku, asynchronní načítání skriptů pomocí `defer`, asynchronní přednačítání Google Fonts přes `rel="preload"` s `dns-prefetch` a přednostní stahování kritických stylů (`style.css`) pomocí `rel="preload"`.
 * **Výstřižek kódu:**
   ```html
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="preload" href="style.css?v=1.2.8" as="style">
   <link rel="preload" href="https://fonts.googleapis.com/...&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <script src="db_data.js?v=1.2.8" defer></script>
-  <script src="db_compositions.js?v=1.2.8" defer></script>
   <script src="script.js?v=1.2.8" defer></script>
   ```
-* **Vysvětlení:** Odstraňuje zdroje blokující vykreslení (render-blocking resources). Parametr `?v=1.2.8` invaliduje mezipaměť.
+* **Vysvětlení:** Zrychluje FCP a LCP odstraněním a přednostním stahováním kritických zdrojů. Parametr `?v=1.2.8` řeší invalidaci mezipaměti.
 
 ### 2. SEO (Search Engine Optimization)
 * **Teoretický popis:** Optimalizace pro vyhledávače pomocí sémantických tagů a strukturovaných dat JSON-LD.
