@@ -1,7 +1,7 @@
 # PyroFiles CZ – Pyrotechnická databáze
 
 ## Úvod
-**PyroFiles CZ** je moderní, plně responzivní a přístupná pyrotechnická databáze určená pro hobbyisty, chemické nadšence a studenty. Tento projekt slouží jako komplexní referenční příručka pro:
+**PyroData CZ** je moderní, plně responzivní a přístupná pyrotechnická databáze určená pro hobbyisty, chemické nadšence a studenty. Tento projekt slouží jako komplexní referenční příručka pro:
 * **Chemikálie:** Přehledně roztříděné podle funkcí (pojiva, paliva, kovy, oxidovadla).
 * **Kompozice:** Receptury na výrobu pyrotechnických efektů (hvězdy, glittery, fontány, dýmovnice, jiskrnice atd.) včetně tabulky složení a bezpečného postupu.
 * **Definice:** Odborný abecední rejstřík A–Z vysvětlující klíčové pojmy v pyrotechnice.
@@ -42,14 +42,15 @@ Projekt má čisté rozložení souborů přímo v kořenovém adresáři repozi
 ## Technický rozbor (Optimalizace)
 
 ### 1. Výkon (Performance)
-* **Teoretický popis:** Rozdělení JS na data a logiku. Načítání skriptů na konci `<body>` pro neblokující renderování.
+* **Teoretický popis:** Rozdělení JS na data a logiku. Použití atributu `defer` pro asynchronní stahování a spouštění skriptů bez blokování HTML parseru a optimalizace načítání Google Fonts přes `rel="preload"`.
 * **Výstřižek kódu:**
   ```html
-  <script src="db_data.js?v=1.2.8"></script>
-  <script src="db_compositions.js?v=1.2.8"></script>
-  <script src="script.js?v=1.2.8"></script>
+  <link rel="preload" href="https://fonts.googleapis.com/...&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <script src="db_data.js?v=1.2.8" defer></script>
+  <script src="db_compositions.js?v=1.2.8" defer></script>
+  <script src="script.js?v=1.2.8" defer></script>
   ```
-* **Vysvětlení:** Zamezuje zpoždění načtení stránky. Parametr `?v=1.2.8` invaliduje mezipaměť (cache-buster).
+* **Vysvětlení:** Odstraňuje zdroje blokující vykreslení (render-blocking resources). Parametr `?v=1.2.8` invaliduje mezipaměť.
 
 ### 2. SEO (Search Engine Optimization)
 * **Teoretický popis:** Optimalizace pro vyhledávače pomocí sémantických tagů a strukturovaných dat JSON-LD.
@@ -76,7 +77,7 @@ Projekt má čisté rozložení souborů přímo v kořenovém adresáři repozi
 * **Vysvětlení:** Skip-link umožňuje přeskočit menu, ARIA atributy informují čtečky o stavu prvků.
 
 ### 4. Sociální sítě (Social Meta Tags)
-* **Teoretický popis:** Implementace Open Graph a Twitter Cards pro vizuální náhledy při sdílení.
+* **Teoretický popis:** Implementace Open Graph & Twitter Cards pro vizuální náhledy při sdílení.
 * **Výstřižek kódu:**
   ```html
   <meta property="og:title" content="PyroFiles CZ – Pyrotechnická databáze">

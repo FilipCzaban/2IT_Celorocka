@@ -56,7 +56,8 @@
   <!-- ═══ Fonts ═══ -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
 
   <!-- ═══ Stylesheet ═══ -->
   <link rel="stylesheet" href="style.css?v=1.2.8">
@@ -274,8 +275,8 @@
     </div>
   </div>
 
-  <script src="db_data.js?v=1.2.8"></script>
-  <script src="db_compositions.js?v=1.2.8"></script>
-  <script src="script.js?v=1.2.8"></script>
+  <script src="db_data.js?v=1.2.8" defer></script>
+  <script src="db_compositions.js?v=1.2.8" defer></script>
+  <script src="script.js?v=1.2.8" defer></script>
 </body>
 </html>
