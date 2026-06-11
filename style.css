@@ -607,6 +607,7 @@ a:hover { color: var(--fire-2); }
   background: var(--bg-3); border: 1px solid var(--bdr);
   border-radius: var(--r-m); padding: .95rem 1.25rem;
   transition: border-color var(--t-f);
+  margin-bottom: 12px;
 }
 .def-item:hover { border-color: var(--bdr-h); }
 .def-item__term { font-size: .95rem; font-weight: 700; color: var(--txt); margin-bottom: .25rem; }
