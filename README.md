@@ -1,7 +1,7 @@
 # PyroFiles CZ – Pyrotechnická databáze
 
 ## Úvod
-**PyroData CZ** je moderní, plně responzivní a přístupná pyrotechnická databáze určená pro hobbyisty, chemické nadšence a studenty. Tento projekt slouží jako komplexní referenční příručka pro:
+**PyroFiles CZ** je moderní, plně responzivní a přístupná pyrotechnická databáze určená pro hobbyisty, chemické nadšence a studenty. Tento projekt slouží jako komplexní referenční příručka pro:
 * **Chemikálie:** Přehledně roztříděné podle funkcí (pojiva, paliva, kovy, oxidovadla).
 * **Kompozice:** Receptury na výrobu pyrotechnických efektů (hvězdy, glittery, fontány, dýmovnice, jiskrnice atd.) včetně tabulky složení a bezpečného postupu.
 * **Definice:** Odborný abecední rejstřík A–Z vysvětlující klíčové pojmy v pyrotechnice.
